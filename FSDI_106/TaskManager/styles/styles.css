@@ -1,0 +1,28 @@
+body{
+    background-color: bisque;
+}
+
+h1{
+    color: grey;
+
+}
+
+main{
+    display: flex;
+}
+
+.aNav{
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.list{
+background-color: blue;
+flex: 5;
+}
+
+.info{
+background-color: red;
+flex: 3;
+}
