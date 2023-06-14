@@ -1,0 +1,64 @@
+body{
+    background-color: bisque;
+}
+
+h1{
+    color: grey;
+
+}
+
+nav{
+    background-color: aliceblue;
+    border-radius: 12%;
+    height: 40px;
+    text-align: center;
+}
+main{
+    display: flex;
+}
+
+h3{
+    text-align: center;
+}
+
+
+.aNav{
+    background-color: rgb(95, 101, 67);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12%;
+    padding: auto;
+}
+
+
+.list{
+background-color: rgb(219, 183, 183);
+flex: 2;
+}
+
+.info{
+background-color:aliceblue;
+flex: 3;
+padding: 20px 15px;
+height: calc(100vh- 79px);
+/* 1 -> all sides*/
+/* top/bottom 2 sides */
+}
+
+.mb-3{
+    padding: auto;
+}
+
+.save.btn{
+    background-color: gray;
+}
+
+#iImportant{
+    font-size: 32px;
+    color: gray;
+    cursor: pointer;
+}
+.active{
+    color: rgb(192,11,11) !important;
+}
