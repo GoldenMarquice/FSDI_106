@@ -35,9 +35,49 @@ function toggleImportant() {
 }
 
 function saveTask() {
-    console.log("Saving Tasks...")
+
+    let title= $("#txtTitle").val();
+    let description = $("#txtDescription").val();
+    let dueDate = $("#selDueDate").val();
+    let status = $("#selStatus").val();
+    let budget = $("#txtBudget").val();
+    let color = $("#selColor").val();
+
+    let taskSave = new Task(isImportant, title,description,dueDate,status,budget,color);
+
+    displayTask(taskSave);
+    clearForm();
+    
 }
 
+function displayTask(task){
+    let syntax = `
+    <div class='tasks'> 
+    <div class= 'details'>
+    <h5> ${task.title}</h5>
+    <p> ${task.description}</p>
+    </div>
+    <label> ${task.status}</label>
+    <label> $${task.budget}</label>
+    <label> ${task.color}</label>
+    <label> ${task.dueDate}</label>
+    </div>
+    `;
+
+    $("#pending-tasks").append(syntax);
+}
+
+function clearForm(){
+    $("#txtTitle").val("");
+    $("#txtDescription").val("");
+    $("#selDueDate").val("");
+    $("#selStatus").val("");
+    $("#txtBudget").val("");
+    $("#selColor").val("");
+    
+
+
+}
 
 
 
@@ -57,3 +97,7 @@ function init() {
 }
 
 window.onload = init;
+
+/**Suggested ReadL
+ * how to create an objects in js Object Literal, Obj constructor, classes
+ */
