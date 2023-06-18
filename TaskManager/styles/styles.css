@@ -43,7 +43,15 @@ opacity: .8;
 position: relative;
 }
 
-.list button{
+.list #hideDetails{
+    position: relative;
+    top: 5px;
+    right: 5px;
+    font-size: 10px;
+    border-radius: 20px;
+}
+
+.list #deleteAll{
     position: absolute;
     top: 5px;
     right: 5px;
@@ -86,6 +94,8 @@ opacity: .8;
     display: flex;
     border: 10px solid black;
     border-radius: 10%;
+    border-width: 4px;
+    border-style: solid;
     margin: 10px 15px 0 15px;
     align-items: center;
 }

@@ -22,7 +22,9 @@
         <section class="list">
             <h3>Your Pending Tasks</h3>
 
-            <button type="button" id="hideDetails"> Hide Details</button>
+            <button type=button id="deleteAll" class=" btn btn-sm btn-outline-danger">Delete All</button>
+
+            <button type="button" id="hideDetails" class=" btn btn-sm btn-outline-dark"> Hide Details</button>
 
             <div id="pending-tasks">
                 <!-- JS will render tasks here-->
@@ -105,6 +107,80 @@
 
     HTTP Verbs/Methods
     HTTP Status Codes
+
+    The primary or most-commonly-used HTTP verbs (or methods, as they are properly called) 
+    are POST, GET, PUT, and DELETE. These correspond to create, read, update, and delete (or CRUD) operations, respectively. 
+    There are a number of other verbs, too, but are utilized less frequently.
+
+    200
+
+OK
+
+GENERAL SUCCESS STATUS CODE.
+
+IS THE MOST COMMON CODE. USED TO INDICATE SUCCESS.
+
+400
+
+BAD REQUEST
+
+THE REQUEST COULD NOT BE UNDERSTOOD BY THE SERVER DUE TO MALFORMED SYNTAX.
+
+401
+
+UNAUTHORIZED
+
+MISSING OR INVALID PASSWORD (EASY MODE), OR
+
+MISSING OR INVALID TIMESTAMP + SIGNATURE (HMAC MODE)
+
+403
+
+FORBIDDEN
+
+THE USER IS NOT AUTHORIZED TO PERFORM THE OPERATION INVALID TIMESTAMP
+
+404
+
+NOT FOUND
+
+RESOURCE NOT FOUND AT GIVEN LOCATION
+
+ACCOUNT DOESN'T EXIST, OR
+
+A WRONG DEVICE PASSWORD HAS BEEN PROVIDED, OR
+
+TOO MANY WRONG PASSWORD
+
+405
+
+METHOD
+
+NOT ALLOWED
+
+THE REQUESTED HTTP METHOD IS NOT APPLICABLE
+
+ALLOWED METHODS :  GET   POST   PUT   DELETE 
+
+413
+
+PAYLOAD TOO LARGE
+
+THE REQUEST IS LARGER THAN THE SERVER IS WILING ABLE TO PROCESS
+
+500
+
+INTERNAL
+
+SERVER ERROR
+
+THE SERVER ENCOUNTERED AN UNEXPECTED CONDITION WHICH PREVENTED IT FROM FULFILLING THE REQUEST.
+
+503
+
+SERVICE UNAVAILABLE
+
+THE SERVICE IS CURRENTLY UNAVAILABLE DUE TO SERVER OVERLOAD OR MAINTENANCE, TRY AGAIN IN A FEW MINUTES
 -->
 
 
